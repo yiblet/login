@@ -7,10 +7,103 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.facebook.yiblet.login.MainActivity">
+    tools:context="com.facebook.yiblet.login.MainActivity"
+    android:background="@color/grey">
 
-    <TextView
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="48dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:background="@color/black"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="36dp"
+            android:id="@+id/relativeLayout">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etUsername"
+                android:background="@color/white"
+                android:layout_marginTop="0dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:inputType="textEmailAddress"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:id="@+id/relativeLayout2"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etPassword"
+                android:background="@color/white"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:inputType="textPassword"/>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOG IN"
+            android:id="@+id/btLogin"
+            android:layout_below="@id/relativeLayout2"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:layout_alignEnd="@+id/relativeLayout2"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:background="@color/white"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:id="@+id/btRegister"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:background="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_below="@+id/btLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
 </RelativeLayout>
